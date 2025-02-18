@@ -1,25 +1,47 @@
 import logo from './logo.svg';
 import './App.css';
+import { Header } from './Components/Header';
 
-function App() {
+export function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Header/>
+    <br/>
+    <h1 className="text-3xl font-bold underline align-bottom">
+      Hello Multifly!!
+    </h1>
+    </>
+  )
 }
 
-export default App;
+// // export default App;
+// import React from "react";
+// import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+// import Login from "./Login/Login";
+// import ProtectedRoute from "./Login/ProtectedRoute";
+// import Dashboard from "./Login/Dashboard";
+// import ForgotPassword from "./Login/ForgotPassword"; // Create this component
+// import Register from "./Login/Register"; // Create this component
+
+// const App = () => {
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route path="/login" element={<Login />} /> {/* Login route */}
+//         <Route path="/forgot-password" element={<ForgotPassword />} /> {/* Forgot password route */}
+//         <Route path="/register" element={<Register />} /> {/* Register route */}
+//         <Route
+//           path="/dashboard"
+//           element={
+//             <ProtectedRoute>
+//               <Dashboard /> {/* Protected dashboard route */}
+//             </ProtectedRoute>
+//           }
+//         />
+//         <Route path="/" element={<Navigate to="/dashboard" replace />} /> {/* Default route */}
+//       </Routes>
+//     </Router>
+//   );
+// };
+
+// export default App;
