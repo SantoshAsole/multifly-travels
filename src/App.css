@@ -1,0 +1,78 @@
+/* Ensure the body takes full height and sets a clean white background */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* White background */
+  font-family: "Arial", sans-serif; /* Font for the page */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Container for centering content */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Set a max width to avoid too wide content */
+  margin: 0 auto; /* Centering container */
+  padding: 0 15px; /* Padding for sides */
+}
+
+/* Adding padding around sections and making sure everything is well spaced */
+section {
+  padding: 40px 0; /* Vertical padding for each section */
+}
+
+/* Apply spacing between elements in a flex layout */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between flex items */
+}
+
+.text-center {
+  text-align: center; /* Center-align text */
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+/* For ensuring spacing and padding on all devices */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  section {
+    padding: 30px 0; /* Slightly reduced padding for mobile */
+  }
+
+  .flex {
+    gap: 10px; /* Reduced gap on small screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 40px; /* Extra space for larger screens */
+  }
+}
