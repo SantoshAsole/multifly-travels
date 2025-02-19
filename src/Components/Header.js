@@ -4,12 +4,12 @@ import user from "../Assets/user.png";
 import { Link } from "react-router-dom";
 export const Header = () => {
   return (
-    <div className="navbar bg-base-100 shadow-sm">
-      <div className="navbar-start">
-        <img src={logo} className="logo" style={{ height: 50 }} />
+    <div className='navbar bg-base-100 shadow-sm'>
+      <div className='navbar-start'>
+        <img src={logo} className='logo' style={{ height: 50 }} />
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+      <div className='navbar-center hidden lg:flex'>
+        <ul className='menu menu-horizontal px-1'>
           <li>
             <Link to={"/"}>Home</Link>
           </li>
@@ -21,28 +21,28 @@ export const Header = () => {
                 </ul>
                 </li> */}
           <li>
-            <Link to={"Flights"}>Flights</Link>
+            <Link to={"/Flights"}>Flights</Link>
           </li>
           <li>
-            <Link to={"Hotels"}>Hotels</Link>
+            <Link to={"/Hotels"}>Hotels</Link>
           </li>
           <li>
-            <Link to={"Cab"}>Cab</Link>
+            <Link to={"/Cab"}>Cab</Link>
           </li>
           <li>
-            <Link to={"PackageTour"}>Package Tour</Link>
+            <Link to={"/PackageTour"}>Package Tour</Link>
           </li>
           <li>
-            <Link to={"Forex"}>Forex</Link>
+            <Link to={"/Forex"}>Forex</Link>
           </li>
           <li>
-            <Link to={"WhoWeAre"}>Who We Are</Link>
+            <Link to={"/WhoWeAre"}>Who We Are</Link>
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
-        <div className="avatar">
-          <div className="w-10 rounded-full">
+      <div className='navbar-end'>
+        <div className='avatar'>
+          <div className='w-10 rounded-full'>
             <Link to={"Login"}>
               <img src={user} />
             </Link>
