@@ -43,7 +43,7 @@ export const Header = () => {
       <div className='navbar-end'>
         <div className='avatar'>
           <div className='w-10 rounded-full'>
-            <Link to={"Login"}>
+            <Link to={"/Login"}>
               <img src={user} />
             </Link>
           </div>
